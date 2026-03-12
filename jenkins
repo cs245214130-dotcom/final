@@ -1,0 +1,24 @@
+pipeline {
+
+agent any
+
+
+stages {
+
+stage('Repo') {
+steps {
+git 'https://github.com/cs245214130-dotcom/final.git'
+}
+}
+
+stage('Build')
+{
+echo "Build Successful"
+}
+stage('Deploy')
+{
+echo "Deploy Success"
+}
+
+}
+}
